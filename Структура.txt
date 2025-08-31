@@ -1,0 +1,40 @@
+    <!-- 1. Структура игры на языке HTML -->
+    
+    <!-- Обёртка -->
+    <div class="wrapper">
+
+        <!-- Главная надпись -->
+        <div id="main-container">
+            <div class="container">
+                <h1>Пари как Жар-птица</h1> 
+                <h2>Преодолей 70 препятствий <br> Пройди 7 уровней Счастья <br> Найди перо Жар-птицы!</h2>
+                <h2 class="keys">&#60;Взлететь&#62; - Любая клавиша <br> &#60;Парить&#62; - клавиша Пробел</h2>
+                <h2 id="record"></h2>
+                <a href="#canvas" id="button2" class="button">Играть</a>
+            </div>
+        </div>
+    
+        <!-- Игра -->
+        <div id="game-container">
+            <canvas id="canvas" width="288" height="512"></canvas>
+    
+            <div class="button-container">
+                <button id="button-parit" class="button" type="button">Жми чтобы парить!</button>
+                <button id="button-up" class="button" type="button">Жми чтобы взлететь!</button>
+            </div>
+        </div>
+        
+        <!-- Всплывающее окно -->
+        <div id="window-container">
+            <a onclick="reload()" class="window-wrapper"></a>
+            <a onclick="reload()" class="close">
+                <img src="img/krestik.png" alt="">
+            </a>
+            <div id="window">
+                <h1>Новый рекорд!</h1>
+                <p id="window-text"></p>
+                <div id="img-container"></div>
+                <a id="button" class="button" onclick="reload()">Играть</a>
+            </div>
+        </div>
+    </div>
